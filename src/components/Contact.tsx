@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { GitHub, Mail, MessageSquare, Phone } from "lucide-react";
+import { Github, Mail, MessageSquare, Phone } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -59,7 +59,7 @@ const Contact = () => {
       link: "https://t.me/Dakedancho",
     },
     {
-      icon: <GitHub className="w-5 h-5" />,
+      icon: <Github className="w-5 h-5" />,
       text: "GitHub",
       link: "https://github.com/daniyar",
     },

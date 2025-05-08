@@ -1,5 +1,5 @@
 
-import { GitHub } from "lucide-react";
+import { Github } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,7 +21,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
-              <GitHub size={20} />
+              <Github size={20} />
             </a>
             <a
               href="https://t.me/Dakedancho"
