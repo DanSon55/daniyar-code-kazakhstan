@@ -47,11 +47,11 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <Mail className="w-5 h-5" />,
-      text: "daniyar@example.com",
+      text: "Danson7a@gmail.com",
     },
     {
       icon: <Phone className="w-5 h-5" />,
-      text: "+7 (XXX) XXX-XXXX",
+      text: "+7775 7325630",
     },
     {
       icon: <MessageSquare className="w-5 h-5" />,
@@ -66,7 +66,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding">
+    <section id="contact" className="section-padding bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto">
         <h2 className="section-title mb-12 text-center">Связаться со мной</h2>
 

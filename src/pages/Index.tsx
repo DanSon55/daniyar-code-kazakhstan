@@ -36,12 +36,18 @@ const Index = () => {
 
   useEffect(() => {
     document.title = "Данияр | Full-Stack Разработчик";
+    
+    // Add a subtle background pattern
+    const body = document.querySelector('body');
+    if (body) {
+      body.classList.add('bg-animate');
+    }
   }, []);
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main>
+      <main className="flex-grow">
         <Hero />
         <About />
         <Experience />
@@ -49,7 +55,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
