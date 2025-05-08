@@ -40,14 +40,19 @@ const Index = () => {
     // Add a subtle background pattern
     const body = document.querySelector('body');
     if (body) {
-      body.classList.add('bg-animate');
+      body.classList.add('bg-pattern');
     }
   }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Background elements */}
+      <div className="bg-dots"></div>
+      <div className="bg-glow"></div>
+      <div className="bg-glow"></div>
+      
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow relative z-10">
         <Hero />
         <About />
         <Experience />
