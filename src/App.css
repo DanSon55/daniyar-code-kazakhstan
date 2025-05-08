@@ -1,4 +1,3 @@
-
 #root {
   margin: 0 auto;
   text-align: center;
@@ -42,7 +41,7 @@
   color: #888;
 }
 
-/* New animations */
+/* Animations */
 .bg-animate {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -94,51 +93,5 @@
   }
   100% {
     transform: translateY(0px);
-  }
-}
-
-/* Background elements */
-.bg-dots {
-  background-image: radial-gradient(circle, #3b82f6 1px, transparent 1px);
-  background-size: 20px 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.bg-glow {
-  position: fixed;
-  width: 60vw;
-  height: 60vw;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(79, 70, 229, 0.2) 0%, rgba(99, 102, 241, 0.1) 30%, transparent 70%);
-  filter: blur(40px);
-  z-index: -2;
-  animation: float 10s ease-in-out infinite alternate;
-  pointer-events: none;
-}
-
-.bg-glow:nth-child(1) {
-  top: -20%;
-  left: -10%;
-}
-
-.bg-glow:nth-child(2) {
-  bottom: -30%;
-  right: -10%;
-  background: radial-gradient(circle, rgba(236, 72, 153, 0.15) 0%, rgba(219, 39, 119, 0.07) 30%, transparent 70%);
-}
-
-@keyframes float {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(30px, 30px);
   }
 }

@@ -37,20 +37,11 @@ const Index = () => {
   useEffect(() => {
     document.title = "Данияр | Full-Stack Разработчик";
     
-    // Add a subtle background pattern
-    const body = document.querySelector('body');
-    if (body) {
-      body.classList.add('bg-pattern');
-    }
+    // Remove background pattern as we're using a photo background
   }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Background elements */}
-      <div className="bg-dots"></div>
-      <div className="bg-glow"></div>
-      <div className="bg-glow"></div>
-      
       <Header />
       <main className="flex-grow relative z-10">
         <Hero />
